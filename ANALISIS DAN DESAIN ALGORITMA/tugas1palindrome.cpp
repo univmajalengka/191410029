@@ -19,18 +19,17 @@ void Palindrome(char hasil[]) {
 	char y [100];
 
 	cout<<"Program Palindrome"<<endl;
-	cout<<"Masukan kata : ";cin>>x;
+	cout<<"=================="<<endl;
+	cout<<"Masukkan kata : ";cin>>x;
 
 	strcpy(y,x);
 	Palindrome(y);
 
 	if(strcmp(x,y)==0) {
 
-		cout<<"Palindrome = "<<x;
-	} else {
-		cout<<"Bukan Palindrome = "<<x;
-	}
+		cout<<"Kata ini adalah palindrome -> "<<x;
+	} else 
+		cout<<"Kata ini adalah bukan Palindrome -> "<<x;
 
 	return 0;
-
 }
